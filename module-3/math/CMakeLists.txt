@@ -1,4 +1,6 @@
 add_library(my_math
-    add.cpp
-    div.cpp
+    src/add.cpp
+    src/div.cpp
 )
+
+target_include_directories(my_math PUBLIC include)
