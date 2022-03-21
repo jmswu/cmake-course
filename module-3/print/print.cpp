@@ -1,5 +1,6 @@
-#include "print.h"
 
+#include <string>
+#include <iostream>
 
 void print_result(std::string type, float result)
 {
