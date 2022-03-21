@@ -1,5 +1,7 @@
+set(SRC_DIR src)
+
 add_library(my_print
-    src/print.cpp
+    ${SRC_DIR}/print.cpp
 )
 
 target_include_directories(my_print PUBLIC include)
