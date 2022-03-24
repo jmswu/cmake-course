@@ -1,9 +1,9 @@
 #include <iostream>
 #include <cstddef>
 
-#include "add.h"
-#include "div.h"
-#include "print.h"
+#include "math/add.h"
+#include "math/div.h"
+#include "print/print.h"
 
 int main(int argc, char **argv)
 {

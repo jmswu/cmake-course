@@ -1,4 +1,4 @@
-#include "div.h"
+#include "math/div.h"
 
 float div(float num1, float num2)
 {
