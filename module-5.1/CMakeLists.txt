@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.0.0)
+
+set(Name Alice)
+
+if (DEFINED Name)
+    message("Name: if block executed")
+else()
+    message("Name: else block executed")
+endif()
+
+# check if case sensitive 
+if (DEFINED NAME)
+    message("Name: if block executed")
+else()
+    message("Name: else block executed")
+endif()
+
+if(DEFINED Age)
+    message("Age: if block executed")
+else()
+    message("Age: else block executed")
+endif()
