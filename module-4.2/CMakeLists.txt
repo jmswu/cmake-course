@@ -22,6 +22,7 @@ message( ${VAR} )
 
 list( SORT VAR )
 message( ${VAR} )
+message( "${VAR}" )
 
 list( LENGTH VAR len_var )
 list( GET VAR 2 5 6 sub_list )
@@ -34,4 +35,9 @@ message( "sub_list: ${sub_list}" )
 message( "sub_list2: ${sub_list2}" )
 message( "str_list: ${str_list}" )
 message( "find_var: ${find_var}" )
+
+# The follow code will produce an error
+# 
+# set( LIST a;b;c )
+# message( ${MY_LIST} )
 
