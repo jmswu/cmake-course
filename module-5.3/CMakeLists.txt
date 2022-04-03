@@ -23,3 +23,9 @@ foreach(x IN LISTS VAR1 VAR2 VAR3)
     message("x = ${x}")
 endforeach(x)
 
+set(VAR2 2 3)
+set(VAR3 "4;5")
+
+foreach(x IN LISTS VAR1 VAR2 VAR3)
+    message("x = ${x}")
+endforeach(x)
