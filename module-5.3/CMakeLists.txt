@@ -6,3 +6,7 @@ while(NOT VAR STREQUAL "aaaaaaaaaa")
     set(VAR ${VAR}a)
     message(${VAR})
 endwhile()
+
+foreach(NAME Alice Bob Charlie)
+    message(${NAME})
+endforeach()
