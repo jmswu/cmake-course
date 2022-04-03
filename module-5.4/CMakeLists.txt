@@ -9,6 +9,8 @@ endfunction()
 print_detail()
 
 # function with one argument
+# also the second function define will
+# over wirte the first function
 function(print_detail name_var)
     message("My name is ${name_var}")
 endfunction()
