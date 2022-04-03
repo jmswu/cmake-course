@@ -10,3 +10,8 @@ endwhile()
 foreach(NAME Alice Bob Charlie)
     message(${NAME})
 endforeach()
+
+
+foreach(x RANGE 100 105)
+    message("Person_${x}")    
+endforeach()
