@@ -14,3 +14,19 @@ print_detail(Charlie)
 
 # print the fist defination
 _print_detail(Alice)
+
+# optional argument
+function(test_func name_var)
+    message("My name is ${name_var}")
+    if (DEFINED ARGV1)
+        message("Hello, ${ARGV1}")
+    endif()
+
+    message("ARGC = ${ARGC}")
+    message("ARGV = ${ARGV}")
+    message("ARGN = ${ARGN}")
+
+endfunction()
+
+test_func(Alice)
+test_func(Alice Bob John Tim)
