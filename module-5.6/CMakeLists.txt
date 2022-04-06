@@ -11,3 +11,13 @@ endfunction()
 message("Outside function: ${Name}")
 print_detail()
 message("Outside function: ${Name}")
+
+function(print_detail)
+    message("Inside function: Before modification: ${Name}")
+    set(Name Bob PARENT_SCOPE)
+    message("Inside function: After modification: ${Name}")
+endfunction()
+
+message("Outside function: ${Name}")
+print_detail()
+message("Outside function: ${Name}")
